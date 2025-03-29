@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 interface MotionTransitionProps {
     children: React.ReactNode;
-    position: 'right' | 'left' | 'top' | 'bottom';
+    position: 'right' | 'bottom';
     className?: string;
 }
 

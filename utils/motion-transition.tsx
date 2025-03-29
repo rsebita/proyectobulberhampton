@@ -16,23 +16,25 @@ export const transitionVariantsPage = {
 export const fadeIn = (position:string) => {
     return {
         visible: {
-            y:0,
-            x:0, 
-            opacity:1,
+            y: 0,
+            x: 0, 
+            opacity: 1,
             transition: {
-                type:"tween",
-                duration: 1.4,
-                ease: [0.25,0.25,0.25,0.75]
+                type: "spring",
+                duration: 1.2,
+                delay: 0.2,
+                bounce: 0.3
             }
         },
         hidden: {
-            y:position === 'botton' ? -80 : 0,
-            x:position === 'right' ? 80 : 0,
-            opacity:0,
+            y: position === 'bottom' ? 100 : 0,
+            x: position === 'right' ? 100 : 0,
+            opacity: 0,
             transition: {
-                type:"tween",
-                duration: 1.4,
-                ease: [0.25,0.25,0.25,0.75]
+                type: "spring",
+                duration: 1.2,
+                delay: 0.2,
+                bounce: 0.3
             }
         }
     }

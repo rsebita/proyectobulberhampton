@@ -22,7 +22,7 @@ const CoverParticles = () => {
         }).then(() => {
             setInit(true);
         });
-    }, []);
+    }, [init]);
 
     return (
         init && 

@@ -4,6 +4,7 @@ import Navbar from "./components/navbar";
 import "./globals.css";
 import Header from "./components/header";
 import { Analytics } from "@vercel/analytics/react";
+import CoverParticles from "./components/cover-particles";
 
 const urbanist = Urbanist({subsets: ["latin"]});
 
@@ -20,6 +21,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={urbanist.className}>
+        <CoverParticles />
         <Navbar />
         <Header />
         {children}

@@ -1,4 +1,4 @@
-import { HomeIcon, Trophy, CircleUserRound, History, Speech, Youtube, Linkedin, Twitter, Rss, Instagram, Facebook } from "lucide-react";
+import { HomeIcon, Trophy, CircleUserRound, Heart , Twitter, Instagram, Facebook } from "lucide-react";
 //import bulbasaur2 from "../../public/bulbasaur2.png";
 
 
@@ -11,21 +11,21 @@ export const itemsNavbar = [
     },
     {
         id: 2,
-        title: "Historia",
-        icon: <History size={25} color="#fff" strokeWidth={1} />,
-        link: "/",
+        title: "Jugadores",
+        icon: <CircleUserRound size={25} color="#fff" strokeWidth={1} />,
+        link: "/players",
     },
     {
         id: 3,
         title: "Trofeos",
         icon: <Trophy size={25} color="#fff" strokeWidth={1} />,
-        link: "/",
+        link: "/trophy",
     },
     {
         id: 4,
-        title: "Contacto",
-        icon: <CircleUserRound size={25} color="#fff"strokeWidth={1} />,
-        link: "/",
+        title: "Eventos",
+        icon: <Heart size={25} color="#fff"strokeWidth={1} />,
+        link: "/events",
     }   
 ];
 
@@ -33,19 +33,24 @@ export const socialNetworks = [
   {
       id: 1,
       logo: <Instagram size={30} strokeWidth={1} />,
-      src: "#!",
+      src: "https://www.instagram.com/bulberhamptonfc/",
+      
   },
   {
       id: 2,
       logo: <Twitter size={30} strokeWidth={1} />,
-      src: "#!",
+      src: "https://twitter.com/",
   },
   {
       id: 3,
       logo: <Facebook size={30} strokeWidth={1} />,
-      src: "#!",
+      src: "https://web.facebook.com/",
   }
 ];
+
+
+
+
 
 /*
 export const players = [

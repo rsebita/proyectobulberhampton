@@ -3,12 +3,16 @@
 @tailwind utilities;
 
 html, body {
-  background-color: var(--bg-color);
+  background-color: black;
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+
+  .bg-gradient-cover {
+    background-color: var(--bg-color);
   }
 }
 
